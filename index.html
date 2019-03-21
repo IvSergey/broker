@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <div class = "row">
+                    <div class = "col">
+                        <img src="images/logo.svg" class="logo" alt="logo">
+                    </div>
+                    <div class = "col">
+                        <p class="title">Welcome to <b>B2BX</b></p>
+                    </div>
+                    <div class = "col">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">EN</a>
+                                <a class="dropdown-item" href="#">RUS</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+            </header>
+            <div id="row-in">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="sign-up">
+                        <p>Not a member?</p>
+                        <a href="#" class="title__link" id="sign-up">Sign up now!</a>
+                    </div>
+                    <div class="sign-in">
+                        <div class="sign-up__title">
+                            <h3>Sign in</h3>
+                            <p class="sign-in__subtitle">to access your account</p>
+                        </div>
+                        <form class="form-horizontal">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your e-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your password"> 
+                                    <i class="far fa-eye-slash" id="eye"></i>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Sign in</button>
+                                </div>
+                                <div class="form-group forgot-pass">
+                                    <button type="submit" class="btn btn-default">Forgot password?</button>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <div id="row-up">
+                <div class="col-sm-6 offset-sm-3">
+                    <div class="sign-up">
+                        <p>Already a member?</p>
+                        <a href="#" class="title__link" id="sign-in">Sign in now!</a>
+                    </div>
+                    <div class="confirmation" id="confirmation">
+                        <div class="confirmation__title">
+                            <h3>Confirmation</h3>
+                            <p class="confirmation__subtitle">code was sent to your e-mail</p>
+                        </div>
+                        <form class="form-horizontal" name="theform" id="confirmation-form">
+                            <div class="confirmation-group">
+                                <input type="text" maxlength="1" class="confirmation-control" >
+                                <input type="text" maxlength="1" class="confirmation-control">
+                                <input type="text" maxlength="1" class="confirmation-control">
+                                <input type="text" maxlength="1" class="confirmation-control">
+                                <input type="text" maxlength="1" class="confirmation-control">
+                                <input type="text" maxlength="1" id='lastItem' class="confirmation-control"  onKeyup="checkform()">
+                            </div>
+                        </form>
+                        <div class="code-receive form-text text-muted" id="problems">
+                            <p>Haven't received the code?</p>
+                            <a href="#" class="resend" id="resend">Resend</a>
+                        </div>
+                        <div class="verified" id="verified">
+                                <img src="images/verified.png" alt="">
+                        </div>  
+                    </div>
+                    <div class="success" id="success">
+                        <div class="success__title">
+                            <h3>Registration successful,</h3>
+                            <p class="success__subtitle">use your e-mail and password for sign in</p>
+                        </div>
+                        <div class="sign__button">
+                            <button  class="sign__btn" id="sign__btn" >Sign in now</button>
+                        </div>
+                    </div>
+                    <div class="sign-in" id="enter">
+                        <div class="sign-up__title">
+                            <h3>Sign up</h3>
+                            <p class="sign-in__subtitle">to open your account</p>
+                        </div>
+                        <form class="form-horizontal" >
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Your e-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Your password">
+                                <i class="fas fa-eye-slash" id="eye2"></i>
+                                <small id="passwordHelpBlock" class="form-text text-muted">Password. Min 6 symbols, at least 1 upper-case,at least 1 non-letter</small>
+                            </div>
+                            <div class="form-group">
+                                    <div class="form-check">
+                                        <div class="main-chekbox">
+                                            <input class="form-check-input " type="checkbox" value="" id="checkbox1" >
+                                            <label class="form-check-label form-text text-muted" for="checkbox1">
+                                                    I confirm that I am 18 years old or over
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-check">
+                                        <div class="main-chekbox">
+                                            <input class="form-check-input " type="checkbox" value="" id="checkbox2" >
+                                            <label class="form-check-label form-text text-muted" for="checkbox2">
+                                                    I agree to <a href="#" class="terms">Terms of use</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit"  class="btn btn-default" id="submitbutton"  value="Submit" disabled>Continue</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+ 
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

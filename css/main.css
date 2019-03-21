@@ -1,0 +1,344 @@
+
+body{
+    font-family: "AvenirNext", Arial, sans-serif;  
+}
+
+header{
+    padding-top: 2em;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.row{
+    align-items: center;
+}
+
+#row-up{
+    display: none;
+}
+
+.dropdown{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e8eaeb;
+    text-align: center;
+}
+
+.btn-secondary {
+    background-color: transparent;
+}
+
+.wrapper{
+    background-color:#1d272e;
+    height: 100%;
+}
+
+.sign-up{
+    min-height: 54px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: linear-gradient(to right, #12c49c, #0db475);
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.sign-in{
+    min-height: 410px;
+    background: #26313a;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e8eaeb;
+    margin-bottom: 100px;
+    padding-bottom: 45px;
+}
+
+.sign-up__title, .confirmation__title, .success__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.sign-in__subtitle,.confirmation__subtitle, .success__subtitle{
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6c7983;
+}
+
+.title__link{
+    color: #fff;
+    margin-left: 2%;
+}
+
+a:hover,a:focus{
+    outline: none;
+    text-decoration: none;
+   }
+   .tab{
+    background: #26313a;
+    /* padding: 40px 50px; */
+    position: relative;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 10%;
+   }
+  
+   
+   .form-horizontal{
+    margin-top: 30px;
+   }
+
+   .form-horizontal .form-group{
+    margin: 0 0 15px 0;
+    position: relative;
+   }
+   .form-horizontal .form-control{
+        width: 80%;
+        height: 40px;
+        background: #26313a;
+        border: none;
+        border-bottom: 1px solid;
+        box-shadow: none;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: all 0.3s ease 0s;
+        margin: auto;
+        padding-left: 0;
+   }
+   .form-horizontal .form-control:focus{
+    box-shadow: none;
+    outline: 0 none;
+   }
+   .form-horizontal .form-group label{
+    /* padding: 0 20px; */
+    color: #7f8291;
+    margin-bottom: 10px;
+   }
+
+   .form-horizontal .btn{
+    width: 80%;
+    background: #6c7983;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 20px;
+   }
+   .form-horizontal .btn:focus{
+    background: #6c7983;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+   }
+   .form-horizontal .forgot-pass{
+    border:none;
+    margin: 0;
+   }
+   .form-horizontal .forgot-pass .btn{
+    width: 80%;
+    background: transparent;
+    color: #00a275;
+    transition: all 0.3s ease 0s;
+   }
+   .form-horizontal .forgot-pass .btn:hover{ color: #6c7983; }
+   @media only screen and (max-width: 479px){
+    .tab{ padding: 40px 20px; }
+   }
+
+   .forgot-pass{
+       padding-bottom: 25px;
+   }
+
+    /* input[type=checkbox]{ visibility: hidden; } */
+    /* .form-horizontal .main-checkbox{
+        width: 20px;
+        height: 20px;
+        background: #eec111;
+        float: left;
+        margin: 5px 0 0 20px;
+        border: 1px solid #eec111;
+        position: relative;
+       }
+       .form-horizontal .main-checkbox label{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+       }
+       .form-horizontal .main-checkbox label:after{
+        content: "";
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        border: 3px solid #fff;
+        border-top: none;
+        border-right: none;
+        background: transparent;
+        opacity: 0;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+       } */
+
+
+   .text-muted{
+    font-size: 12px;
+    /* width: 80%; */
+    /* margin-left: 10%; */
+   }
+
+   #passwordHelpBlock{
+       width: 80%;
+       margin-left: 10%;
+   }
+
+ .form-check{
+     width: 80%;
+     margin-left: 10%;
+ }
+
+.confirmation{
+    display: none;
+    min-height: 250px;
+    /* min-height: 220px; */
+    background: #26313a;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e8eaeb;
+    margin-bottom: 200px
+}
+
+.verified{
+    display: none;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+.confirmation-group{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+.confirmation-control{
+    width: 12%;
+    height: 12%;
+    border: none;
+    border-bottom: 1px solid #6c7983;
+    background: transparent;
+    margin-left: 27px;
+    color:#fe6b6b;
+    text-align: center;
+}
+
+.code-receive{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.confirmation-control:first-child{
+    margin-left: 0;
+}
+
+
+.fa-eye-slash:before{
+    content: "\f070";
+    position: absolute;
+    top: 2%;
+    /* left: 100%; */
+    right: 10%;
+    cursor: pointer
+}
+ .success{
+     flex-direction: column;
+     display: none;
+     min-height: 250px;
+    /* min-height: 220px; */
+    background: #26313a;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #e8eaeb;
+    margin-bottom: 200px
+ }
+
+.sign__btn{
+    width: 80%;
+    background-image: linear-gradient(to right, #12c49c, #0db475);
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 50px;
+}
+
+   .terms, .resend{
+       color: #00a275;
+       
+   }
+
+ 
+
+   a:hover{
+    color: #6c7983;
+    transition: all 0.3s ease 0s;
+   }
+
+   .dropdown-toggle{
+       border: none;
+   }
